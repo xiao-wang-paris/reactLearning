@@ -8,14 +8,14 @@ const Todo = ({ onClick, completed, text }) => (
             textDecoration: completed? 'line-through':'none'
         }}
     >
-    test
+        {text}
     </li>
 )
 
 Todo.PropTypes = {
     onClick : PropTypes.func.isRequired, 
-    completed: PropTypes.func.isRequired, 
-    text: PropTypes.func.isRequired
+    completed: PropTypes.bool.isRequired, 
+    text: PropTypes.string.isRequired
 }
 
 export default Todo

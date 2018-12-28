@@ -1,4 +1,4 @@
-import ProtoTypes from 'prop-types'
+import PropTypes from 'prop-types'
 import React from 'react'
 
 const Link = ({ active, children, onClick }) => (
@@ -6,17 +6,17 @@ const Link = ({ active, children, onClick }) => (
         onClick={onClick}
         disabled={active}
         style={{
-            marginLeft: '4px'
+            marginLeft: '4px',
         }}
     >
-    {children}
+        {children}
     </button>
 )
 
-Link.prototypes = {
-    active: ProtoTypes.bool.isRequired,
-    children: ProtoTypes.node.isRequired, 
-    onClick: ProtoTypes.func.isRequired
+Link.propTypes = {
+    active: PropTypes.bool.isRequired,
+    children: PropTypes.node.isRequired, 
+    onClick: PropTypes.func.isRequired
 }
 
 export default Link

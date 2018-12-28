@@ -2,8 +2,9 @@ import React from 'react'
 import {addTodo} from '../actions'
 import {connect} from 'react-redux'
 
-const AddTodo = ({dispatch}) => {
-    let input 
+const AddTodo = ({ dispatch }) => {
+    let input
+    
     return (
         <div>
             <form
